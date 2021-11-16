@@ -5,4 +5,7 @@ Juan José Rubio Mejía (Administrador BD)
 Soy estudiante, tengo 20 años y soy de Armenia
 
 Harold Andrey Sanchez Avila (Analista)
-Soy estudiante de ing.sistemas, tengo 19 años soy de tunja pero vivo en Bello Antioquia 
+Soy estudiante de ing.sistemas, tengo 19 años soy de tunja pero vivo en Bello Antioquia
+
+Sara Alejandra Meneses Santamaria (Product Owner)
+Soy estudiante de ingeniería industrial, tengo 18 años y soy de Bogotá
