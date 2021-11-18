@@ -4,9 +4,9 @@ import SidebarAdmin from '../components/SidebarAdmin'
 
 const LayoutSideAdmin = () => {
     return (
-        <div>
+        <div className='flex w-screen h-screen'>
             <SidebarAdmin />
-            <Outlet />
+            <main className='flex w-full overflow-y-scroll p-5'><Outlet /></main>
         </div>
     )
 }

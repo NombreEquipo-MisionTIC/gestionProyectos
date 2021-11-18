@@ -4,9 +4,11 @@ import NavbarAdmin from '../components/NavbarAdmin'
 
 const LayoutNavAdmin = () => {
     return (
-        <div>
+        <div className='mainContainerNav'>
             <NavbarAdmin />
-            <Outlet />
+            <main>
+                <Outlet />
+            </main>
         </div>
     )
 }

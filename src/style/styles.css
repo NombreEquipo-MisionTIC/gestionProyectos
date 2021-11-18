@@ -3,6 +3,7 @@
     margin: 0%;
     padding: 0%;
 }
+/*==============================================================*/
 
 /* 
 Estos son los estilos de la página de login y registro de usuarios
@@ -102,6 +103,23 @@ FIN
 Estos son los estilos del header y sidebar
 */
 
+.mainContainerNav{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.mainContainerNav > main{
+    height: 100%;
+}
+.mainContainerSide{
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+}
+.mainContainerSide > main{
+    height: 100%;
+}
+
 .logo{
     height: 120px;
     cursor: pointer;
@@ -137,6 +155,50 @@ Estos son los estilos del header y sidebar
     padding: 20px 40px;
 }
 
+.sidebar{
+    width: 200px;
+    background-color: #8FA382;
+    height: 100vh;
+}
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #8bac75;
+}
+.sidebar li{
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    padding-left: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sidebar li:hover{
+    background-color: white;
+    color: #000;
+}
+
+/*
+FIN
+*/
+
+/*
+Estilos de las tarjetas
+*/
+.cardContainer{
+    display: flex;
+    border:#000 1px solid;
+}
+.cardInside{
+    display: flex;
+    flex-direction: column;
+    border:red 1px solid;
+    padding: 20px;
+    margin: 20px;
+}
 /*
 FIN
 */
