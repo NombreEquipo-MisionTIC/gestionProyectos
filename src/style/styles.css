@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+/*==============================================================*/
+
+/* 
+Estos son los estilos de la página de login y registro de usuarios
+*/
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    width: 420px;
+    display: flex;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0.2);
+}
+.login{
+    padding: 40px;
+    position: relative;
+}
+
+
+.tituloLogin{
+    margin-top: 40px;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: center; 
+}
+
+.login input {
+    text-align: center  ;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 25px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-color:#4A4A4A;
+    
+}
+
+.login .submit{
+    border: 0;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: #337DFF;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 20px ;
+}
+
+.username:focus,
+.password:focus{
+    border: 1px #000;
+}
+
+.recuperarCont{
+    text-align: center;
+    cursor: pointer;
+}
+.login .avatar{
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+
+}
+.login button{
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family:Helvetica;
+    border: 0;
+    border-radius: 20px;
+    background-color: #21c9c3;
+    color: white;
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0.2);
+    cursor: pointer;
+    position: relative;
+    
+}
+
+/*
+FIN
+*/
+
+/*
+Estos son los estilos del header y sidebar
+*/
+
+.mainContainerNav{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.mainContainerNav > main{
+    height: 100%;
+}
+.mainContainerSide{
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+}
+.mainContainerSide > main{
+    height: 100%;
+}
+
+.logo{
+    height: 120px;
+    cursor: pointer;
+}
+
+.headerNavbar{
+    background-color: #8FA382;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    color: white;
+}
+
+.navLinks{
+    list-style: none;
+}
+.navLinks li{
+    display: inline-block;
+    padding: 20px 40px;
+    margin: 0px 10px;
+}
+.navLinks li:hover{
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+}
+
+.buttonPerfil{
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px 40px;
+}
+
+.sidebar{
+    width: 200px;
+    background-color: #8FA382;
+    height: 100vh;
+}
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #8bac75;
+}
+.sidebar li{
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    padding-left: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sidebar li:hover{
+    background-color: white;
+    color: #000;
+}
+
+/*
+FIN
+*/
+
+/*
+Estilos de las tarjetas
+*/
+.cardContainer{
+    display: flex;
+    border:#000 1px solid;
+}
+.cardInside{
+    display: flex;
+    flex-direction: column;
+    border:red 1px solid;
+    padding: 20px;
+    margin: 20px;
+}
+/*
+FIN
+*/
