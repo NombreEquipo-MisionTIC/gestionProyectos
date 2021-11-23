@@ -1,10 +1,15 @@
 import React from 'react'
+import NavbarEstudiante from '../components/NavbarEstudiante'
 
 const LayoutEstudiante = () => {
     return (
         <div>
-            <nav>Nav del usuario</nav>
-            <Outlet />
+            <NavbarEstudiante></NavbarEstudiante>
+            <div>
+            Estudiante proyectos, aqui va la tabla de proyectos
+        </div>
+
+            
         </div>
     )
 }

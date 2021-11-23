@@ -11,6 +11,7 @@ import AdminProyectos from './pages/AdminProyectos';
 import Perfil from './pages/Perfil';
 import LayoutNavAdmin from './layouts/LayoutNavAdmin';
 import LayoutSideAdmin from './layouts/LayoutSideAdmin';
+import LayoutEstudiante from "./layouts/LayoutEstudiante"
 import Home from './pages/Home.jsx'
 
 function App() {
@@ -28,6 +29,11 @@ function App() {
           <Route path='admin' element={<LayoutNavAdmin/>}>
             <Route path='usuarios' element={<AdminUsuarios/>} />
             <Route path='proyectos' element={<AdminProyectos/>} />
+          </Route>
+
+          <Route path='estudiante' element={<LayoutEstudiante />}>
+            <Route path='' element={<Home/>} />
+            <Route path='perfil' element={<Perfil/>} />
           </Route>
           
         </Routes>
