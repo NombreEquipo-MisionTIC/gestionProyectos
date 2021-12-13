@@ -1,5 +1,6 @@
 import React from 'react'
 import Cards from '../components/Cards'
+import '../style/cards.css'
 
 const Home = () => {
     return (

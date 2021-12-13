@@ -5,7 +5,7 @@ const SidebarAdmin = () => {
   return (
     <div>
       <div className='sidebar'>
-        <header>My app</header>
+        <header>INIT</header>
         <ul>
           <li>
             <Link to='perfil'>Perfil</Link>

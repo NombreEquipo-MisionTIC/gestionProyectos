@@ -1,100 +1,110 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+}
+
+body{
+    background-color: #fff;
 }
 /*==============================================================*/
 
 /* 
 Estos son los estilos de la página de login y registro de usuarios
 */
-.container{
+.container {
     width: 100%;
     height: 100vh;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
-.login-container{
+.login-container {
     width: 420px;
     display: flex;
     height: auto;
     background-color: #fff;
-    box-shadow: 0 1px 1px 0 rgba(0,0,0.2);
-}
-.login{
-    padding: 40px;
-    position: relative;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0.2);
 }
 
+.login {
+    padding-bottom: 50px;
+}
 
-.tituloLogin{
-    margin-top: 40px;
+.tituloLogin {
     color: #000;
     margin-bottom: 30px;
-    text-align: center; 
+    text-align: center;
+}
+
+.formRegistro{
+    text-align: center;
 }
 
 .login input {
-    text-align: center  ;
-    width: 100%;
+    text-align: center;
+    width: 60%;
     font-size: 16px;
     padding: 5px;
     margin-bottom: 25px;
     border-top-style: none;
     border-left-style: none;
     border-right-style: none;
-    border-color:#4A4A4A;
-    
+    border-color: #4A4A4A;
 }
 
-.login .submit{
+.login .submit {
     border: 0;
-    width: 100%;
+    width: 60%;
     height: 40px;
     padding: 10px;
-    background-color: #337DFF;
+    background-color: #35B729;
     color: #fff;
     font-size: 14px;
     cursor: pointer;
-    border-radius: 20px ;
+    border-radius: 20px;
 }
 
 .username:focus,
-.password:focus{
+.password:focus {
     border: 1px #000;
 }
 
-.recuperarCont{
+.recuperarCont {
     text-align: center;
     cursor: pointer;
 }
-.login .avatar{
-    height: 60px;
+
+.login .avatar {
+    height:230px;
+    width: 270px;
     display: block;
     margin: 0 auto;
 
 }
-.login button{
+
+.login button {
     margin-bottom: 20px;
     font-size: 14px;
     font-weight: 600;
-    font-family:Helvetica;
     border: 0;
     border-radius: 20px;
-    background-color: #21c9c3;
+    background-color: #43f533;
     color: white;
-    width: 100%;
+    width: 60%;
     height: 40px;
     padding: 8px;
-    box-shadow: 0 0 3px 0 rgba(0,0,0.2);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0.2);
     cursor: pointer;
     position: relative;
-    
 }
 
+.login p{
+    text-align: center;
+}
 /*
 FIN
 */
@@ -103,30 +113,33 @@ FIN
 Estos son los estilos del header y sidebar
 */
 
-.mainContainerNav{
+.mainContainerNav {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
-.mainContainerNav > main{
+
+.mainContainerNav>main {
     height: 100%;
 }
-.mainContainerSide{
+
+.mainContainerSide {
     display: flex;
     height: 100vh;
     width: 100vh;
 }
-.mainContainerSide > main{
+
+.mainContainerSide>main {
     height: 100%;
 }
 
-.logo{
+.logo {
     height: 120px;
     cursor: pointer;
 }
 
-.headerNavbar{
-    background-color: #8FA382;
+.headerNavbar {
+    background-color: #8bac75;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -134,40 +147,44 @@ Estos son los estilos del header y sidebar
     color: white;
 }
 
-.navLinks{
+.navLinks {
     list-style: none;
 }
-.navLinks li{
+
+.navLinks li {
     display: inline-block;
     padding: 20px 40px;
     margin: 0px 10px;
 }
-.navLinks li:hover{
+
+.navLinks li:hover {
     background-color: #fff;
     color: #000;
     border-radius: 10px;
 }
 
-.buttonPerfil{
+.buttonPerfil {
     background-color: #fff;
     color: #000;
     border-radius: 10px;
     padding: 20px 40px;
 }
 
-.sidebar{
+.sidebar {
     width: 200px;
     background-color: #8FA382;
     height: 100vh;
 }
-.sidebar header{
+
+.sidebar header {
     font-size: 22px;
     color: white;
     text-align: center;
     line-height: 70px;
     background: #8bac75;
 }
-.sidebar li{
+
+.sidebar li {
     height: 100%;
     width: 100%;
     font-size: 20px;
@@ -176,7 +193,8 @@ Estos son los estilos del header y sidebar
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.sidebar li:hover{
+
+.sidebar li:hover {
     background-color: white;
     color: #000;
 }
@@ -185,19 +203,59 @@ Estos son los estilos del header y sidebar
 FIN
 */
 
+
+
 /*
-Estilos de las tarjetas
+Estilos Tabla
 */
-.cardContainer{
-    display: flex;
-    border:#000 1px solid;
+
+table {
+    background-color: #fff;
+    width: 80%;
+    margin: 10px;
+    overflow-y: scroll;
+    text-align: left;
+    border-collapse: collapse;
 }
-.cardInside{
+
+th, td {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+thead {
+    background-color: #8bac75;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+/*FIN*/
+
+/*
+Estilos Inputs Usuarios
+*/
+
+.contenedorInputs{
+    margin-left: 35%;
+}
+
+.inputUsuario{
+    border-bottom: 1px solid black;
+    margin: 20px;
+    text-align: center;
+}
+
+.formulario{
     display: flex;
     flex-direction: column;
-    border:red 1px solid;
-    padding: 20px;
-    margin: 20px;
+    align-items: center;
+    
+}
+
+.botonForm{
+    border:1px solid #000;
 }
 /*
 FIN
