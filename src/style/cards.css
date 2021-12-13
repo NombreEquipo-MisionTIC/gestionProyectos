@@ -1,0 +1,54 @@
+/*
+Estilos de las tarjetas
+*/
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardInside {
+    background-color: rgb(248, 242, 233);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.objetivos{
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.objetivos div{
+    border: 1px solid black;
+    overflow-y: auto;
+    padding: 8px;
+}
+.info{
+    border: 1px solid black;
+    padding: 8px;
+}
+.info span{
+    border: 1px solid red;
+    
+}
+.liderCard{
+    border: 1px solid black;
+    padding: 8px;
+}
+.liderCard span{
+    border: 1px solid red;
+}
+.fechas{
+    border: 1px solid black;
+}
+.fechas span{
+    border: 1px solid red;
+}
+
+/*
+FIN
+*/
