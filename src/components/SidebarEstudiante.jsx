@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-const SidebarAdmin = () => {
+const SidebarEstudiante = () => {
   return (
     <div>
       <div className='sidebar'>
@@ -13,9 +13,7 @@ const SidebarAdmin = () => {
           <li>
             <Link to=''>Home</Link>
           </li>
-          <li>
-            <Link to='usuarios'>Usuarios</Link>
-          </li>
+ 
           <li>
             <Link to='proyectos'>Proyectos</Link>
           </li>
@@ -25,4 +23,4 @@ const SidebarAdmin = () => {
   )
 }
 
-export default SidebarAdmin;
+export default SidebarEstudiante;

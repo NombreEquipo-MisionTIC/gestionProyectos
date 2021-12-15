@@ -5,7 +5,7 @@ const NavbarAdmin = () => {
     return (
         <div>
             <header className='headerNavbar'>
-                <img className='logo' alt='Logo' src='https://github.com/NombreEquipo-MisionTIC/gestionProyectos/blob/main/media/INIT-logo2.png?raw=true' />
+                <img className='logo' alt='Logo' src='https://github.com/NombreEquipo-MisionTIC/gestionProyectos/blob/main/media/INITlogo3whitebackground.png?raw=true' />
                 <nav>
                     <ul className='navLinks'>
                         <li>
