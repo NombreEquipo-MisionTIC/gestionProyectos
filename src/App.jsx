@@ -20,6 +20,7 @@ import LayoutNavLider from './layouts/LayoutNavLider'
 
 import Home from './pages/Home.jsx'
 import Proyecto from './pages/Proyecto';
+import CrearProyecto from './pages/CrearProyecto';
 
 // const httplink = new createHttpLink({
 //   uri: 'http://localhost:4000/graphql'
@@ -68,6 +69,7 @@ function App() {
             <Route path='usuarios' element={<AdminUsuarios />} />
             <Route path='proyectos' element={<AdminProyectos />} />
             <Route path='proyecto/:_id' element={<Proyecto />} />
+            <Route path='crearProyecto' element={<CrearProyecto/>} />
           </Route>
 
 

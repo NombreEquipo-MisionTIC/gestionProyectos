@@ -17,6 +17,9 @@ const NavbarAdmin = () => {
                         <li>
                             <Link to='proyectos'>Proyectos</Link>
                         </li>
+                        <li>
+                            <Link to='crearproyecto'>Crear Proyecto</Link>
+                        </li>
                     </ul>
                 </nav>
                 <Link to='perfil' className='buttonPerfil'><button>Perfil</button></Link>
