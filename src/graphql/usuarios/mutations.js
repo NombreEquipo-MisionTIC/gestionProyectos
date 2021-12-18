@@ -1,33 +1,58 @@
-import { gql } from '@apollo/client'
+import { gql } from "@apollo/client";
 
 const EDITAR_USUARIO = gql`
-    mutation EditarUsuario(
-        $_id: String!, 
-        $nombre: String, 
-        $apellido: String, 
-        $identificacion: String, 
-        $correo: String, 
-        $rol: Enum_Rol,
-        $estado: Enum_EstadoU
+  mutation EditarUsuario(
+    $_id: String!
+    $nombre: String
+    $apellido: String
+    $identificacion: String
+    $correo: String
+    $rol: Enum_Rol
+    $estado: Enum_EstadoU
+  ) {
+    editarUsuario(
+      _id: $_id
+      nombre: $nombre
+      apellido: $apellido
+      identificacion: $identificacion
+      correo: $correo
+      rol: $rol
+      estado: $estado
     ) {
-        editarUsuario(
-            _id: $_id, 
-            nombre: $nombre, 
-            apellido: $apellido, 
-            identificacion: $identificacion, 
-            correo: $correo, 
-            rol: $rol,
-            estado: $estado
-        ) {
-            _id
-            nombre
-            apellido
-            identificacion
-            correo
-            rol
-            estado
-        }
+      _id
+      nombre
+      apellido
+      identificacion
+      correo
+      rol
+      estado
     }
+  }
+`;
+const CREAR_USUARIO = gql`
+  mutation CrearUsuario(
+    $nombre: String!
+    $apellido: String!
+    $identificacion: String!
+    $correo: String!
+    $rol: Enum_Rol!
+  ) {
+    crearUsuario(
+      nombre: $nombre
+      apellido: $apellido
+      identificacion: $identificacion
+      correo: $correo
+      rol: $rol
+    ) {
+      _id
+      nombre
+      apellido
+      identificacion
+      correo
+      rol
+      estado
+    }
+  }
 `;
 
-export {EDITAR_USUARIO}
+export { EDITAR_USUARIO, CREAR_USUARIO};

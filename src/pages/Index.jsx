@@ -15,8 +15,8 @@ const Index = () => {
                             <input type="password" name="passaword" placeholder="Contraseña" className='password' />
                             <input type="submit" value="Siguiente" className="submit" />
                             <button>
-                                <Link to='registro'>
-                                    Crear cuenta
+                                <Link to='/registro'>
+                                    Crear cuenta...
                                 </Link>
                             </button>
                         </form>
